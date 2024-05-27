@@ -69,6 +69,7 @@ const click = async (id) => {
   if (videoTrack.value) {
     await videoTrack.value?.setDevice(id);
     label.value = videoTrack.value?.getTrackLabel()
+    console.log("%c CAMERA CHANGED!", "color: red;");
   }
 }
 

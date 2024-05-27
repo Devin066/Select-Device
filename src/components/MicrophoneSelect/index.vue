@@ -68,6 +68,7 @@ const click = async (id) => {
   if (audioTrack.value) {
     await audioTrack.value?.setDevice(id);
     label.value = audioTrack.value?.getTrackLabel()
+    console.log("%c MICROPHONE CHANGED!", "color: red;");
   }
 }
 
